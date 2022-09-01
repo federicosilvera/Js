@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  background-color: rgb(57, 180, 129);
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  color: #dedede;
+}
+
+.form {
+  text-align: center;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
