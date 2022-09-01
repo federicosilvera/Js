@@ -57,6 +57,7 @@ boton.addEventListener("click", function(){
     li.innerHTML = `<span>${monto.value}</span>`
 
     lista.append(li);
+    event.preventDefault()
     
     
 });
