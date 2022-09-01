@@ -42,20 +42,22 @@
 function calcular_dolar( pesos ){
     let dolar = pesos / 43
     console.log ( dolar);
+    return dolar;
     
 }
 
 let boton = document.getElementById("boton");
 
 boton.addEventListener("click", function(){
-    let monto =document.getElementById("monto");
+    let monto = document.getElementById("monto");
     let lista = document.getElementById("lista");
     
-   
+     
+     let  valor =calcular_dolar(monto.value);
 
     let li = document.createElement("li");
     
-    li.innerHTML = `<span>${calcular_dolar(monto.value)}</span>`
+    li.innerHTML = `<span>${valor}</span>`
     
     lista.append(li);
     event.preventDefault()
