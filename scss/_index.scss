@@ -4,10 +4,52 @@
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
 
+} 
+.grid_index{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows: 20% 20% 35% 20% 5%;
+    grid-template-areas:
+    "nav nav nav"
+    ". titulo1 ."
+    ". titulo ."
+    "form form form"
+    " footer footer footer";
 }
 
+header{
+    grid-area: nav;
+}
+.titulo{
+    grid-area: titulo1; 
+    
+    text-align: center;
+    
+    
+}
+.img{grid-area: titulo;
+    width: 50%;
+    height: 90%;
+    text-align: end;
+   
+}
+form{
+    grid-area: form;
+    text-align: center;
+    
+}
+
+.foot{
+    grid-area: footer;
+}
+a{
+    text-decoration: none;
+    color: $color_oscuro;
+}
 body{
-    background-color: $color_principal;
+    background-color: white;
 }
 
 h1{
@@ -21,3 +63,32 @@ h1{
     padding: 10px;
 
 }
+
+.navbar{
+    background-color: $color_letra;
+}
+footer{
+    color: $color_oscuro;
+    background-color: $color_letra;
+    text-align: center;
+}
+a.nav-link{ color: $color_oscuro;
+    text-decoration: none;
+    &:hover{
+        color: $color_letra;
+        background-color: $color_principal;
+        transform: scale(1);
+    }
+                
+}
+
+.nav-item{ color: $color_oscuro;
+    text-decoration: none;
+    &:hover{
+        color: $color_letra;
+        background-color: $color_principal;
+        transform: scale(1);
+    }
+                
+}
+

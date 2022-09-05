@@ -5,8 +5,47 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.grid_index {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  grid-template-rows: 20% 20% 35% 20% 5%;
+  grid-template-areas: "nav nav nav" ". titulo1 ." ". titulo ." "form form form" " footer footer footer";
+}
+
+header {
+  grid-area: nav;
+}
+
+.titulo {
+  grid-area: titulo1;
+  text-align: center;
+}
+
+.img {
+  grid-area: titulo;
+  width: 50%;
+  height: 90%;
+  text-align: end;
+}
+
+form {
+  grid-area: form;
+  text-align: center;
+}
+
+.foot {
+  grid-area: footer;
+}
+
+a {
+  text-decoration: none;
+  color: #000010;
+}
+
 body {
-  background-color: #1d2953;
+  background-color: white;
 }
 
 h1 {
@@ -18,6 +57,36 @@ h1 {
 .form {
   text-align: center;
   padding: 10px;
+}
+
+.navbar {
+  background-color: #dcc9ff;
+}
+
+footer {
+  color: #000010;
+  background-color: #dcc9ff;
+  text-align: center;
+}
+
+a.nav-link {
+  color: #000010;
+  text-decoration: none;
+}
+a.nav-link:hover {
+  color: #dcc9ff;
+  background-color: #4e58a5;
+  transform: scale(1);
+}
+
+.nav-item {
+  color: #000010;
+  text-decoration: none;
+}
+.nav-item:hover {
+  color: #dcc9ff;
+  background-color: #4e58a5;
+  transform: scale(1);
 }
 
 /*# sourceMappingURL=styles.css.map */
