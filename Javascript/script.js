@@ -50,11 +50,11 @@ boton.addEventListener("click", function(event){
      
      let  valor =calcular_dolar(monto.value);
 
-    let p = document.createElement("p");
     
-    p.innerHTML = `<span>${valor}</span>`
     
-    lista.append(p);
+    lista.innerHTML = `<span>${valor}</span>`
+    
+    
     event.preventDefault()
     
     
@@ -98,7 +98,7 @@ boton2.addEventListener("click", function(event){
    
     let p = document.createElement("p");
     let mostrar = lista_monetaria.find( buscar_moneda );
-    p.innerHTML = buscar_moneda();
-    lista2.append(p);
+    lista2.innerHTML = buscar_moneda();
+    
     
 });
