@@ -70,10 +70,6 @@ let busco;
 let valor;
 let lista_monetaria = [{moneda:"Dolar", valor:"43"}, {moneda:"Euro", valor:"38"}, {moneda:"Argentinos", valor:"00,5"}, {moneda:"Real", valor:"6,90"}, {moneda:"Uruguayos", valor:"1"}];
 
-
-
-
-
 let boton2 = document.getElementById("boton2");
 
 boton2.addEventListener("click", function(event){
@@ -81,13 +77,16 @@ boton2.addEventListener("click", function(event){
 
     function buscar_moneda(){
         let i = 0;
+        
        for(tipo_moneda of lista_monetaria){
-            if(tipo_moneda.moneda == valor){
+       
+            if(tipo_moneda.moneda == valor || tipo_moneda.valor==valor){
                 return lista_monetaria[i].moneda + ": " + lista_monetaria[i].valor;
             }   
             else{
-                i++;
+                i++;    
             }
+            
        }
     }
 
