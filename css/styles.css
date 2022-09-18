@@ -5,6 +5,54 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.tarjetas {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.tarjetas-borde {
+  border: solid #dedede;
+}
+
+.saludo {
+  width: 400px;
+  height: 80vh;
+}
+
+button {
+  margin: 4px;
+}
+
+.blur {
+  color: #001427;
+  font-weight: bold;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+
+h5 {
+  color: #001427;
+  font-weight: bold;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+
+aside {
+  width: 40%;
+  height: 40%;
+  display: inline-block;
+}
+aside img {
+  width: 60%;
+  height: 60%;
+}
+
+td {
+  padding: 7px;
+}
+
 .entrada {
   text-align: center;
 }

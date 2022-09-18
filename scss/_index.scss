@@ -3,5 +3,57 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
+    
 
 } 
+
+.tarjetas{
+    width: 300px;
+    height: 300px;
+    
+    display: inline-block;
+    margin: 10px;
+}
+
+.tarjetas-borde{
+    border: solid $color_principal;
+    
+}
+
+.saludo{
+    width: 400px;
+    height: 80vh;
+    
+}
+button{
+    margin: 4px;
+}
+.blur{
+    color: $color_oscuro;
+    font-weight: bold;
+    -webkit-backdrop-filter:blur(15px);
+    backdrop-filter: blur(15px);
+}
+h5{
+    color: $color_oscuro;
+    font-weight: bold;
+    -webkit-backdrop-filter:blur(15px);
+    backdrop-filter: blur(15px);
+}
+
+aside{
+    width: 40%;
+    height: 40%;
+    display: inline-block;
+    
+  img{
+    width: 60%;
+    height: 60%;
+  }
+  
+}
+
+td{
+   padding: 7px;
+    
+}

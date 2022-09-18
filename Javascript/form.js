@@ -16,23 +16,30 @@ class Usuario {
     }
 }
 
-registro.addEventListener("submit", (e)=>{
-    e.preventDefault();
-
-    if(user_regi != "" && pass_regi !=""){
-    let nuevo_usuario = new Usuario(user_regi.value, pass_regi.value);
-    usuarios.push(nuevo_usuario);
-    console.log(usuarios)
-}
-} )
-
-login.addEventListener("submit", (e)=>{
-    e.preventDefault();
-    let user=user_logi.value;
-    let pass=pass_logi.value;
-    for(let account of usuarios){
-        if(user==account.usuario && pass==user.contraseña){
-            window.location.href="../index.html";
-        }
+if(window.location.pathname.includes("index.html")) {
+    registro.addEventListener("submit", (e)=>{
+        e.preventDefault();
+    
+        if(user_regi != "" && pass_regi !=""){
+        let nuevo_usuario = new Usuario(user_regi.value, pass_regi.value);
+        usuarios.push(nuevo_usuario);
+        localStorage.setItem("usuarios", JSON.stringify(usuarios))
+        window.location.href="./pages/login.html";
     }
-})
+    } )
+}
+
+if(window.location.pathname.includes("login.html")){
+    login.addEventListener("submit", (e)=>{
+        e.preventDefault();
+        let user=user_logi.value;
+        let pass=pass_logi.value;
+        let usuarios = JSON.parse(localStorage.getItem("usuarios"))
+
+        for(let account of usuarios){
+            if(user == account.usuario && pass == account.contraseña){
+                window.location.href="home.html";
+            }
+        }
+    })
+}
