@@ -13,7 +13,7 @@ class Usuario {
     }
 }
 
- 
+if(window.location.pathname.includes("/")){
     registro.addEventListener("submit", (e)=>{
         e.preventDefault();
       
@@ -27,5 +27,5 @@ class Usuario {
     }
  
     } )
-   
+}
     
