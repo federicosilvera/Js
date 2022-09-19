@@ -24,7 +24,7 @@ if(window.location.pathname.includes("index.html")) {
         let nuevo_usuario = new Usuario(user_regi.value, pass_regi.value);
         usuarios.push(nuevo_usuario);
         localStorage.setItem("usuarios", JSON.stringify(usuarios))
-        window.location.href="./pages/login.html";
+        window.location.href="./login.html";
     }
     } )
 }
@@ -38,7 +38,7 @@ if(window.location.pathname.includes("login.html")){
 
         for(let account of usuarios){
             if(user == account.usuario && pass == account.contraseña){
-                window.location.href="home.html";
+                window.location.href="./home.html";
             }
         }
     })
