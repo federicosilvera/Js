@@ -4,7 +4,7 @@ let pass_logi=document.getElementById("pass_logi");
 let ingresar =document.getElementById("ingresar");
 
 
-if(window.location.pathname.includes("/pages/login.html")){
+
     login.addEventListener("submit", (e)=>{
         e.preventDefault();
         let user=user_logi.value;
@@ -17,4 +17,3 @@ if(window.location.pathname.includes("/pages/login.html")){
             }
         }
     })
-}

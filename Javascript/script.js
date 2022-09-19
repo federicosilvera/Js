@@ -109,7 +109,13 @@ function agregar_carrito(e){
    localStorage.setItem("carrito", arreglo_json);
 
    mostrar_carrito(producto_carrito);
-
+   Toastify({
+    text: "Se agrego al Carrito",
+    className: "info",
+    style: {
+      background: "linear-gradient(to right, #00b09b, #96c93d)",
+    }
+  }).showToast();
 
     
 }
@@ -131,6 +137,8 @@ function mostrar_carrito(producto_carrito){
 
     for (let boton of botones_borrar){
         boton.addEventListener("click", borrar_producto);
+        
+        
     }
 
 }
@@ -140,6 +148,13 @@ function borrar_producto(e){
     let padre = hijo.parentNode;
     let abuelo = padre.parentNode;
     abuelo.remove();
+    Toastify({
+        text: "Se elimino del Carrito",
+        className: "info",
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        }
+      }).showToast();
 }
 
 let btn_carrito = document.getElementById("btn_carrito");

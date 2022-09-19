@@ -13,16 +13,19 @@ class Usuario {
     }
 }
 
-if(window.location.pathname.includes("/")) {
+ 
     registro.addEventListener("submit", (e)=>{
         e.preventDefault();
+      
     
         if(user_regi != "" && pass_regi !=""){
         let nuevo_usuario = new Usuario(user_regi.value, pass_regi.value);
         usuarios.push(nuevo_usuario);
         localStorage.setItem("usuarios", JSON.stringify(usuarios))
+       
         window.location.href="./pages/login.html";
     }
+ 
     } )
-}
-
+   
+    
