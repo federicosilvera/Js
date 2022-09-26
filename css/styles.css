@@ -53,6 +53,10 @@ td {
   padding: 7px;
 }
 
+body {
+  background-color: #e9ecef;
+}
+
 .entrada {
   text-align: center;
 }
