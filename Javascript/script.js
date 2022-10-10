@@ -147,6 +147,8 @@ function borrar_producto(e){
     let hijo = e.target;
     let padre = hijo.parentNode;
     let abuelo = padre.parentNode;
+    let abuelox2 = abuelo.parentNode;
+    
     abuelo.remove();
     Toastify({
         text: "Se elimino del Carrito",
@@ -169,3 +171,13 @@ btn_carrito.addEventListener("click", function(){
         carrito.style.display = "flex";
     }
 })}
+
+let btn_compra =document.getElementById("btn_compra");
+btn_compra.addEventListener("click", finalizar_compra);
+
+function finalizar_compra (e){
+    alert("Gracias por su compra");
+    location.reload();
+
+    
+}
