@@ -15,10 +15,10 @@ boton.addEventListener("click", function(event){
     
      
      let  valor =calcular_dolar(monto.value);
-
+     let valor2 = valor.toFixed(2)  
     
     
-    lista.innerHTML = `<span>${valor}</span>`
+    lista.innerHTML = `<span>${valor2}</span>`
     
     
     event.preventDefault(event)
