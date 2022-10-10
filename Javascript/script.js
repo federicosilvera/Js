@@ -2,7 +2,7 @@
 let dolar = "";
 function calcular_dolar( pesos ){
      dolar = pesos / 43
-    console.log ( dolar);
+    
     return dolar;
     
 }
@@ -75,14 +75,14 @@ boton2.addEventListener("click", function(event){
 
 let carrito=[];
 let boton_compra = document.querySelectorAll(".btn_compra");
-console.log(boton_compra);
+
 
 for( let boton of boton_compra){
     boton.addEventListener("click", agregar_carrito)
 }
 
 function agregar_carrito(e){
-    console.log("se agrega")
+    
 
     let hijo = e.target;
     let padre = hijo.parentNode;
